@@ -1,0 +1,56 @@
+body {
+  background: linear-gradient(to right, #c24040, #005ac8);
+  height: 100vh;
+  width: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.fa-user {
+  color: greenyellow;
+}
+
+.chatbox-card {
+  height: 70vh;
+  opacity: 0.8;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+input[type="range"] {
+  width: 300px;
+}
+
+.chatbox-card .card-divider {
+  height: 4rem;
+  color: aliceblue;
+}
+
+.message-tag {
+  background-color: rgba(146, 237, 150, 0.4);
+  max-width: 50%;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 10%;
+}
+
+#wave-image {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
