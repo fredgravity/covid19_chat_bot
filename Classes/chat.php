@@ -55,8 +55,8 @@ $questionArray = [
     'what is your gender' => "i am a " .$bot->getBotGender(),
 ];
 
-if (isset($_POST['msg'])) {
-    $message = trim(strtolower($_POST['msg']));
+if (isset($_GET['msg'])) {
+    $message = trim(strtolower($_GET['msg']));
 
     $bot->hears($message, function(Bot $botty){
         global $message;

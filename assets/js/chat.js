@@ -41,7 +41,7 @@ $(document).ready(() => {
     let data = $.param({ msg: msg });
 
     axios
-      .post("../classes/chat.php", data)
+      .get("../classes/chat.php", data)
       .then((res) => {
         const chatDisplay = $("#chat-display");
         // console.log(res);
