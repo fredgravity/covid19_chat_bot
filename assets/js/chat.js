@@ -120,7 +120,7 @@ $(document).ready(() => {
 //       .catch((err) => {
 //         console.log(err);
 //       });
-//   };
+  };
 
   //initiate speech synthesis api
   const speachSynth = (msg) => {
