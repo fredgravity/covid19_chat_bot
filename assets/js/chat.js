@@ -40,6 +40,47 @@ $(document).ready(() => {
     let chat = msg;
     let data = $.param({ msg: msg });
 
+    // $.ajax({
+    //   url: "../classes/chat.php",
+    //   type: "post",
+    //   data: data,
+    //   success: function (res) {
+    //     const chatDisplay = $("#chat-display");
+    //     console.log(res);
+
+    //     //chat for Bot
+    //     const botChat = document.createElement("p");
+    //     botChat.className = "message-tag bot";
+    //     botChat.innerHTML = res.data;
+
+    //     //chat for user
+    //     const userChat = document.createElement("p");
+    //     userChat.className = "message-tag user float-right";
+    //     userChat.innerHTML = chat;
+
+    //     //append chat to chat-display
+    //     setTimeout(() => {
+    //       $("#chat-input-text").attr("disabled", "true");
+
+    //       chatDisplay.append(userChat);
+    //       autoscroll();
+
+    //       chatDisplay.append(document.createElement("br"));
+    //       chatDisplay.append(document.createElement("br"));
+    //     }, 400);
+
+    //     setTimeout(() => {
+    //       chatDisplay.append(botChat);
+    //       autoscroll();
+
+    //       //get speech synthesis
+    //       $("#chat-input-text").removeAttr("disabled");
+    //       let done = speachSynth(res.data);
+    //       //   console.log(done);
+    //     }, 2000);
+    //   },
+    // });
+
     axios
       .get("../classes/chat.php", data)
       .then((res) => {
